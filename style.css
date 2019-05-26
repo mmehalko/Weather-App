@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 400px;
+  height: 600px;
+  background-color: #c5c5c5;
+  margin: auto;
+}
+
+.container .weatherInfo {
+  background-image: url("img/day.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 65%;
+}
+
+.container .weatherInfo .temperature,
+.container .weatherInfo .weatherText {
+  position: relative;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-align: center;
+}
+
+.container .weatherInfo .temperature {
+  font-size: 4em;
+  color: #333;
+}
+
+.container .weatherInfo .weatherText {
+  font-size: 2em;
+  color: #333;
+}
+
+.container form {
+  position: relative;
+  top: 18%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.container form .cityName {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.container form input {
+  width: 70%;
+  padding: 1em;
+  font-weight: bold;
+  color: #111;
+}
+
+.icon img {
+  background-color: #fff;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=style.css.map */
