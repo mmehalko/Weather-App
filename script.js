@@ -1,4 +1,4 @@
-const key = "";
+const key = "8cAl688G507aynEyYJC0ZKtoGGMjOVAv";
 
 const getCity = async (city) => {
     const base = "http://dataservice.accuweather.com/locations/v1/cities/search";
