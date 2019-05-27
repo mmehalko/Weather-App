@@ -85,4 +85,15 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+hr{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.met {
+    display: block;
+    font-size: 0.5em;
+    margin-bottom: 1.5em;
+}
 /*# sourceMappingURL=style.css.map */

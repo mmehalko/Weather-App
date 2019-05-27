@@ -34,7 +34,8 @@ const form = document.querySelector("form");
 const cityName = document.querySelector(".cityName");
 const weatherInfo = document.querySelector(".weatherInfo");
 const weatherText = document.querySelector(".weatherText");
-const span = document.querySelector("span");
+const spanImperial = document.querySelector(".imperial");
+const spanMetric = document.querySelector(".metric");
 const temperature = document.querySelector(".temperature");
 const icon = document.querySelector(".icon img");
 
@@ -57,7 +58,8 @@ form.addEventListener("submit", e => {
                 weatherText.style.color = "#fff";
             }
 
-            span.innerHTML = data.weather.Temperature.Metric.Value;
+            spanImperial.innerHTML = data.weather.Temperature.Imperial.Value;
+            spanMetric.innerHTML = data.weather.Temperature.Metric.Value;
             weatherText.innerHTML = data.weather.WeatherText;
             cityName.innerHTML = value;
             icon.setAttribute("src", `img/icons/${data.weather.WeatherIcon}.svg`);
@@ -88,7 +90,8 @@ if (localStorage.getItem("city")) {
                 weatherText.style.color = "#fff";
             }
 
-            span.innerHTML = data.weather.Temperature.Metric.Value;
+            spanImperial.innerHTML = data.weather.Temperature.Imperial.Value;
+            spanMetric.innerHTML = data.weather.Temperature.Metric.Value;
             weatherText.innerHTML = data.weather.WeatherText;
             cityName.innerHTML = localStorage.getItem("city");
             icon.setAttribute("src", `img/icons/${data.weather.WeatherIcon}.svg`);
